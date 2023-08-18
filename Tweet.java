@@ -1,4 +1,4 @@
-public class TweetClass{
+public class Tweet{
     private String message;
     private int retweets;
     private int likes;
@@ -33,6 +33,6 @@ public class TweetClass{
         return false;
     }
     public String toString(){
-        return "Message: " + message + ", Likes: " + likes + ", Retweets: " + retweets; 
+        return "msg " + message + " rt " + retweets + " lk " + likes ; 
     }
 }
