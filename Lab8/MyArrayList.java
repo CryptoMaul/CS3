@@ -139,13 +139,16 @@ public class MyArrayList implements MyList{
 	 *	If index is too big or too smalll, do not change and values and return null
 	 */
 	public Object set(int index, Object obj){
-        
+        if(index < 0 || index >= data.length) return null;
+        temp = data[index];
+        data[index] = obj;
+        return temp;
     }
 	
 	/**
 	 *	Return the number of elements that are in the list
 	 */
 	public int size(){
-
+        return data.length;
     }
 }
