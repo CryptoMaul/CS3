@@ -140,7 +140,7 @@ public class MyArrayList implements MyList{
 	 */
 	public Object set(int index, Object obj){
         if(index < 0 || index >= data.length) return null;
-        temp = data[index];
+        Object temp = data[index];
         data[index] = obj;
         return temp;
     }
