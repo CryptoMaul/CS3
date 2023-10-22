@@ -126,7 +126,7 @@ public class MyArrayList implements MyList{
             }
         }
 
-        if(passed || newTemp.length == 0){
+        if(passed || data[data.length-1] == obj){
             data = newTemp;
             return true;  
         }
