@@ -125,7 +125,8 @@ public class MyArrayList implements MyList{
                 newTemp[i] = data[i + 1];
             }
         }
-        if(passed){
+
+        if(passed || newTemp.length == 0){
             data = newTemp;
             return true;  
         }
